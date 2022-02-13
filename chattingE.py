@@ -1,5 +1,6 @@
 import discord, datetime
 import asyncio
+import os
 
 client = discord.Client()
 
@@ -56,4 +57,5 @@ async def on_message(message):
         msg = message.content[26:]
         await client.get_channel(int(channel)).send(msg)
 
-client.run(token)
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
