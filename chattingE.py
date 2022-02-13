@@ -56,4 +56,4 @@ async def on_message(message):
         await client.get_channel(int(channel)).send(msg)
 
 access_token = os.environ["BOT_TOKEN"]
-client.run(access_token)
+client.run(OTE2MzEyOTMxODMzMTEwNTQ4.YaoU6w.uThvC57F_HYkP8XYK3jInTTtkAc)
